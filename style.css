@@ -10,7 +10,13 @@
 
 body{
     margin:0;
+    transition:transform 0.3s ease;
 
+}
+
+body.show-nav{
+    /* width of nav*/
+    transform:translateX(200px);
 }
 
 /* nav bar stylinh */
@@ -120,6 +126,12 @@ button:focus{
     bottom:0;
 }
 
+.modal-container.show-modal{
+    display:block;
+    
+    
+}
+
 .modal{
     background-color:white;
     border-radius:5px;
@@ -131,6 +143,8 @@ button:focus{
     transform:translate(-50%, -50%);
     max-width:100%;
     width:400px;
+    animation-name:modalOpen;
+    animation-duration:var(--modal-duration);
 }
 
 .modal-header{
@@ -174,3 +188,11 @@ width:100%;
     
 }
 
+@keyframes modalOpen{
+    from{
+        opacity:0
+    }
+    to{
+        opacity:1
+    }
+}
