@@ -19,7 +19,7 @@ body.show-nav{
     transform:translateX(200px);
 }
 
-/* nav bar stylinh */
+/* nav bar styling */
 nav{
     background-color:var(--primary-color);
     border-right:2px solid rgba(200,200,200,0.1);
@@ -111,9 +111,9 @@ button:focus{
 }
 .container{
     padding:15px;
-    margin 0 auto;
     max-width:100%;
-    width:800px;
+    margin:0 auto;
+    
 }
 
 .modal-container{
@@ -171,7 +171,7 @@ button:focus{
 
 .modal-form label{
     display:block;
-    margin-bottom:
+    
 }
 .modal-form .form-input{
 padding:8px;
@@ -187,6 +187,54 @@ width:100%;
     right:0;
     
 }
+
+/*form validation*/
+
+
+.h2{
+    text-align:center;
+    margin:0 0 20px;
+}
+
+.form{
+    padding:30px 40px;
+}
+.form-control{
+    margin-bottom:10px;
+    padding-bottom:20px;
+    position:relative;
+}
+
+.form-control label{
+    color:black;
+    display:block;
+    margin-bottom:5px;
+
+}
+
+.form-control input{
+    border:2px solid blue;
+    border-radius:4px;
+    width:100%;
+    padding:10px;
+    font-size:14px;
+}
+
+.form-control input:focus{
+  outline:0;
+  border-color:red;
+}
+
+
+.form button{
+    cursor:pointer;
+    display:block;
+    font-size:16px;
+    padding:20px;
+    width:100%;
+}
+
+
 
 @keyframes modalOpen{
     from{

@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Landing Page</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css" integrity="sha512-p++g4gkFY8DBqLItjIfuKJPFvTPqcg2FzOns2BNaltwoCOrXMqRIOqgWqWEvuqsj/3aVdgoEo2Y7X6SomTfUPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.0/css/v4-shims.min.css" integrity="sha512-p++g4gkFY8DBqLItjIfuKJPFvTPqcg2FzOns2BNaltwoCOrXMqRIOqgWqWEvuqsj/3aVdgoEo2Y7X6SomTfUPA==" crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+
+    <script src="script.js" defer></script>
+   
+    <!-- for nav menu-->
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 </head>
 <body>
     <nav>
@@ -28,7 +33,7 @@
     <header>
 
     <button id="toggle" class="toggle">
-        <i class="fa-solid fa-burger"></i>
+        <span class="iconify" data-icon="fa:align-justify"></span>
 
     </button>
     <h1>my landing page</h1>
@@ -62,36 +67,46 @@
 
         <!-- modal form-->
         
-        <div class="modal-header">
-            <h3>sign sup</h3>
+     
 
-        </div>
-        <div class="modal-content">
-            <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-            <form class="modal-form">
-                <div>
-                    <label for="name">name</label>
-                    <input class="text" id="name" class="form-input" placeholder="enter name">
+            <div class="container">
+                <form id="form" class="form" method= "GET" action="/">
+                <h2>Sign Up</h2>
+        
+                <!--username-->
+                <div class="form-control">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="enter username" required>
+                    
                 </div>
-                <div>
-                    <label for="email">email</label>
-                    <input class="email" id="email" class="form-input" placeholder="enter email">
+                <!--email-->
+        
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="enter email" required >
+                    
                 </div>
-                <div>
+                <!--password-->
+                <div class="form-control">
                     <label for="password">password</label>
-                    <input class="password" id="password" class="form-input" placeholder="enter password" >
+                    <input type="text" id="password" placeholder="enter password" min="5" required>
+                    
                 </div>
-                <div>
-                    <label for="password2">confirm password</label>
-                    <input class="password2" id="password2" class="form-input" placeholder="confirm password"> 
-                    <input type="submit" value="submit"class="submit-btn" >
-            </form>
-        </div>
+                <!-- confirm password-->
+                <div class="form-control">
+                    <label for="password2">Confirm Password</label>
+                    <input type="password" id="password2" placeholder="enter password again" required>
+                    
+                </div>
+                <button>Submit</button>
+                
+            </div>
+        </form>
     </div>
 </div>
 
 
     
-    <script src="script.js"></script>
+    
 </body>
 </html>
