@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 :root{
     --modal-duration:1s;
     --primary-color: #30336b;
@@ -11,6 +13,7 @@
 body{
     margin:0;
     transition:transform 0.3s ease;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -114,6 +117,30 @@ button:focus{
     max-width:100%;
     margin:0 auto;
     
+    
+}
+main{
+    margin:1.5rem;
+}
+section{
+    display:grid;
+    grid-gap:1.5rem;
+    grid-template-columns: repeat(2,1fr);
+}
+.options{
+    background-color: aquamarine;
+    
+   
+    
+}
+
+.benefits{
+    background-color:var(--secondary-color);
+
+}
+
+.name{
+    color:red;
 }
 
 .modal-container{
