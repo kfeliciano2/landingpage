@@ -116,31 +116,72 @@ button:focus{
     padding:15px;
     max-width:100%;
     margin:0 auto;
-    
-    
+      
+}
+
+.container h2{
+    text-align:center;
 }
 main{
-    margin:1.5rem;
+    margin:1rem;
 }
 section{
     display:grid;
-    grid-gap:1.5rem;
+    
     grid-template-columns: repeat(2,1fr);
 }
 .options{
-    background-color: aquamarine;
-    
    
-    
+    display:flex;
+   
 }
+.feature{
+    padding:0 1em;
+}
+
+.la{
+    border:2px solid gray;
+    padding:1em;
+    border-radius:100%;
+}
+i.fa{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:3em;
+
+}
+.benefit-title{
+    text-align: center;
+}
+
+
+
 
 .benefits{
     background-color:var(--secondary-color);
-
+    display:grid;
+    grid-template-columns:  repeat(2, 1fr);
+    
 }
+
+
+.benefits div{
+    border:.85px solid white;
+}
+
 
 .name{
     color:red;
+}
+footer{
+    background-color:gray;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
 }
 
 .modal-container{
