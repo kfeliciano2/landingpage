@@ -169,11 +169,19 @@ i.fa{
 .benefits div{
     border:.85px solid white;
 }
-
+.quote{
+    display:flex;
+}
+.fa-user-circle-o{
+   
+    display:flex;
+    align-self:center;
+}
 
 .name{
     color:red;
 }
+
 footer{
     background-color:gray;
     color:white;
